@@ -5,7 +5,7 @@ import (
 	"github.com/kataras/iris/v12"
 	"github.com/kataras/iris/v12/context"
 	"github.com/kataras/iris/v12/sessions"
-	"iris-demo/application/app_session"
+	"iris_demo/application/app_session"
 	"net/http"
 	"path/filepath"
 	"regexp"
@@ -49,6 +49,11 @@ type Base struct {
 }
 
 func (this *Base) BeginRequest(ctx iris.Context) {
+	/**
+	 ** if LoginInfo/Demos/Demos2 ... is a type of struct , error with "schema: invalid path "aaa"schema: invalid path "aaa"" in POST
+	 ** But LoginMap is a type of int/string/map[string]any ... No problem
+	 ** I don't know why?
+	 */
 	fmt.Println("BeginRequest......")
 	this.Ctx = ctx
 	this.Session = session_home //将session实例传给base controller基类用于控制器调用

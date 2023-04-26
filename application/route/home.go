@@ -3,8 +3,8 @@ package route
 import (
 	"github.com/kataras/iris/v12"
 	"github.com/kataras/iris/v12/mvc"
-	"iris-demo/application/app_session"
-	"iris-demo/application/controller/home"
+	"iris_demo/application/app_session"
+	"iris_demo/application/controller/home"
 )
 
 type Home struct{}

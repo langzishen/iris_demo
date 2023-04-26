@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/kataras/iris/v12"
 	"github.com/kataras/iris/v12/view"
-	"iris-demo/application/app_session"
-	"iris-demo/application/route"
+	"iris_demo/application/app_session"
+	"iris_demo/application/route"
 )
 
 var app *iris.Application
